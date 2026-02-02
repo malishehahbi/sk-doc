@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+	:root {
+		--bg: #f4f2ef;
+		--surface: #ffffff;
+		--text: #121212;
+		--muted: #5c5c5c;
+		--line: #d8d4cf;
+		--accent: #0f0f0f;
+		--accent-soft: #c8bda8;
+		--code-bg: #efebe6;
+	}
+
+	.dark {
+		--bg: #0c0c0c;
+		--surface: #141414;
+		--text: #f5f3ef;
+		--muted: #a5a09a;
+		--line: #2a2a2a;
+		--accent: #f2efe8;
+		--accent-soft: #6c644f;
+		--code-bg: #1f1f1f;
+	}
+
+	html {
+		font-family: 'IBM Plex Sans', system-ui, sans-serif;
+		background-color: var(--bg);
+		color: var(--text);
+	}
+
+	body {
+		min-height: 100vh;
+		background: radial-gradient(circle at 10% 10%, rgba(200, 189, 168, 0.18), transparent 45%),
+			linear-gradient(180deg, rgba(12, 12, 12, 0.04), transparent 45%),
+			var(--bg);
+		color: var(--text);
+	}
+
+	.dark body {
+		background: radial-gradient(circle at 15% 15%, rgba(108, 100, 79, 0.18), transparent 45%),
+			linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 45%),
+			var(--bg);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: 'Space Grotesk', system-ui, sans-serif;
+		letter-spacing: -0.02em;
+	}
+
+	code,
+	pre {
+		font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+			'Courier New', monospace;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	::selection {
+		background: var(--accent-soft);
+		color: var(--text);
+	}
+
+	input[type='search']::-webkit-search-cancel-button,
+	input[type='search']::-webkit-search-decoration,
+	input[type='search']::-webkit-search-results-button,
+	input[type='search']::-webkit-search-results-decoration {
+		appearance: none;
+		-webkit-appearance: none;
+	}
+
+	input[type='search']::-ms-clear,
+	input[type='search']::-ms-reveal {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
+
+@layer components {
+	.container-shell {
+		@apply mx-auto w-full max-w-6xl px-6;
+	}
+
+	.card {
+		background: var(--surface);
+		border: 1px solid var(--line);
+		border-radius: 20px;
+		box-shadow: 0 20px 60px -40px rgba(0, 0, 0, 0.45);
+	}
+
+	.tag {
+		@apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[11px] uppercase tracking-[0.2em];
+		border-color: var(--line);
+		color: var(--muted);
+	}
+
+	.doc-body h1,
+	.doc-body h2,
+	.doc-body h3 {
+		margin-top: 2rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.doc-body p {
+		margin: 0.75rem 0;
+		color: var(--muted);
+		line-height: 1.7;
+	}
+
+	.doc-body a {
+		text-decoration: underline;
+		text-decoration-color: var(--accent-soft);
+		text-underline-offset: 4px;
+	}
+
+	.doc-body code {
+		background: var(--code-bg);
+		padding: 0.12rem 0.35rem;
+		border-radius: 6px;
+		font-size: 0.9em;
+	}
+
+	.doc-body pre {
+		background: var(--code-bg);
+		padding: 1rem;
+		border-radius: 16px;
+		overflow-x: auto;
+	}
+
+	.doc-body ul {
+		margin: 0.75rem 0 0.75rem 1.25rem;
+		list-style: square;
+		color: var(--muted);
+	}
+
+	mark {
+		background: color-mix(in srgb, var(--accent-soft) 70%, transparent);
+		color: inherit;
+		padding: 0 0.2em;
+		border-radius: 4px;
+	}
+}
