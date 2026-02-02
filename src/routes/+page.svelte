@@ -16,7 +16,7 @@
 
 <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
 	<div class="card px-8 py-10">
-		<p class="tag">Docs / Index</p>
+		<p class="tag">Docs</p>
 		<h1 class="mt-8 text-4xl font-semibold leading-tight">
 			Minimal documentation, designed on a strict grid.
 		</h1>
