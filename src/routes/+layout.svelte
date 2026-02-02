@@ -59,7 +59,7 @@
 		<div class="flex items-center gap-4">
 			<div class="h-3 w-3 rounded-full border" style="border-color: var(--line)"></div>
 			<div>
-				<p class="text-[11px] uppercase tracking-[0.4em] text-[var(--muted)]">Neorw</p>
+				<p class="text-[11px] uppercase tracking-[0.4em] text-[var(--muted)]">mali</p>
 				<a href={`${base}/`}>
 					<p class="text-lg font-semibold tracking-tight">Documentatios</p>
 				</a>
