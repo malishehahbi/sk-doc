@@ -31,9 +31,10 @@
 			>
 				{data.docs.length} Documents
 			</div>
+			<a href="{base}/docs/getting-started">
 			<div class="rounded-2xl border px-5 py-3 text-xs uppercase tracking-[0.3em]" style="border-color: var(--line)">
-				TypeScript + Tailwind
-			</div>
+				Start Reading →
+			</div></a>
 		</div>
 	</div>
 	<div class="card flex flex-col justify-between px-8 py-10">
