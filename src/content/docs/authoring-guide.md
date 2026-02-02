@@ -7,7 +7,7 @@ category: Authoring
 
 # Authoring Guide
 
-This app is markdown‑first. Every document lives as a `.md` file under `src/content/docs` and is automatically indexed for search and navigation.
+This app is markdown-first. Every document lives as a `.md` file under `src/content/docs` and is automatically indexed for search and navigation.
 
 ## Create a new doc
 
@@ -43,7 +43,7 @@ The `order` field controls sort order. Lower numbers appear first.
 
 If `order` is missing, the document appears after ordered items.
 
-## Headings and “On this page”
+## Headings and "On this page"
 
 The right sidebar and mobile accordion are built from `#`, `##`, and `###` headings.
 
@@ -56,7 +56,7 @@ Global search (in the navbar) indexes:
 - Summary
 - Full content
 
-In‑page search highlights matches inside the current document.
+In-page search highlights matches inside the current document.
 
 ## Customize styling
 

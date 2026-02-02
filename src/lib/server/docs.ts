@@ -52,11 +52,14 @@ export const getAllDocs = async (): Promise<DocEntry[]> => {
 		Object.entries(docFiles).map(async ([path, resolver]) => {
 			const raw = (await resolver()) as string;
 			const { data, content } = matter(raw);
-			const toc = Array.from(content.matchAll(/^(#{1,3})\s+(.+)$/gm)).map((match) => ({
-				level: match[1].length,
-				text: match[2].trim(),
-				id: slugify(match[2])
-			}));
+			const contentForToc = content.replace(/```[\s\S]*?```/g, '');
+			const toc = Array.from(contentForToc.matchAll(/^(#{1,3})\s+(.+)$/gm)).map(
+				(match) => ({
+					level: match[1].length,
+					text: match[2].trim(),
+					id: slugify(match[2])
+				})
+			);
 			const html = String(marked.parse(content));
 			const plainText = stripHtml(html);
 			const slug = slugFromPath(path);
