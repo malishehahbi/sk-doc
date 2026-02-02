@@ -1,11 +1,11 @@
 ---
-title: Typography + Grid
-summary: A modular scale and a columnar grid that keep the content calm.
+title: Typography & Grid
+summary: Type scale and grid rules for consistent docs layout.
 order: 3
 category: Foundations
 ---
 
-# Typography + Grid
+# Typography & Grid
 
 Set the tone with a restrained scale. Use bold, low-contrast headings and keep body copy compact.
 
@@ -18,4 +18,10 @@ Set the tone with a restrained scale. Use bold, low-contrast headings and keep b
 
 ## Grid
 
-The layout uses a 12-column grid. Text spans 6–7 columns, while supporting content spans 4–5.
+The layout uses a 12‑column grid. Text spans 6–7 columns, while supporting content spans 4–5.
+
+## Markdown rhythm
+
+- Use `#` once for the title.
+- Use `##`/`###` for structure so the TOC can index your page.
+- Keep paragraphs short to preserve a calm reading rhythm.

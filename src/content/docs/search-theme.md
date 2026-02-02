@@ -1,11 +1,11 @@
 ---
-title: Search + Theme
-summary: Real-time indexing and local theme persistence.
+title: Search & Theme
+summary: Global search, in-page search, and how the theme toggle works.
 order: 4
 category: Experience
 ---
 
-# Search + Theme
+# Search & Theme
 
 Search is instant and local. It filters through titles and the full text of every markdown file.
 
@@ -14,6 +14,10 @@ Search is instant and local. It filters through titles and the full text of ever
 - Typing updates the list immediately.
 - Results are ranked by the document order, then title.
 - Clear the field to return to the full index.
+
+## In-page search
+
+Each doc page includes a local search that highlights matches in the current document.
 
 ## Theme toggle
 
