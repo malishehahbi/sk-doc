@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>404 · My App 11</title>
+	<title>404 · Mali</title>
 </svelte:head>
 
 <section class="card px-8 py-12">

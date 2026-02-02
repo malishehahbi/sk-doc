@@ -51,7 +51,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>My App 11 Docs</title>
+	<title>Mali Docs</title>
 </svelte:head>
 
 <div class="min-h-screen">

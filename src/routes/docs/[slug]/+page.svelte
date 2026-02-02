@@ -51,7 +51,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.doc.title} · My App 11</title>
+	<title>{data.doc.title} · Mali</title>
 </svelte:head>
 
 <section class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px]">

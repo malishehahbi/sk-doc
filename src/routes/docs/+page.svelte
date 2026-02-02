@@ -4,11 +4,11 @@
 </script>
 
 <svelte:head>
-	<title>Docs Index · My App 11</title>
+	<title>Docs · Mali</title>
 </svelte:head>
 
 <section class="card px-8 py-10">
-	<p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Docs Index</p>
+	<p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Docs</p>
 	<h1 class="mt-6 text-3xl font-semibold">Select a document</h1>
 	<p class="mt-3 max-w-2xl text-sm text-[var(--muted)]">
 		Choose a page from the list below to start reading. You can also use the search in the

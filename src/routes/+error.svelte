@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.status} · My App 11</title>
+	<title>{$page.status} · Mali</title>
 </svelte:head>
 
 <section class="card px-8 py-12">
