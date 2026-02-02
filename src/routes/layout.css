@@ -135,6 +135,9 @@
 		padding: 1rem;
 		border-radius: 16px;
 		overflow-x: auto;
+		max-width: 100%;
+		white-space: pre-wrap;
+		word-break: break-word;
 	}
 
 	.doc-body ul {
