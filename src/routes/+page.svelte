@@ -25,12 +25,7 @@
 			Everything lives in `src/content/docs`.
 		</p>
 		<div class="mt-8 flex flex-wrap gap-4">
-			<div
-				class="rounded-2xl border px-5 py-3 text-xs uppercase tracking-[0.3em]"
-				style="border-color: var(--line)"
-			>
-				{data.docs.length} Documents
-			</div>
+			
 			<a href="{base}/docs/getting-started">
 			<div class="rounded-2xl border px-5 py-3 text-xs uppercase tracking-[0.3em]" style="border-color: var(--line)">
 				Start Reading →
