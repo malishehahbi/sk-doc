@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let { data } = $props();
 	let query = $state('');
 
@@ -76,7 +77,7 @@
 
 <section class="mt-12 grid gap-6 lg:grid-cols-2">
 	{#each filteredDocs as doc}
-		<a href={`/docs/${doc.slug}`} class="card group px-8 py-8 transition hover:-translate-y-1">
+		<a href={`${base}/docs/${doc.slug}`} class="card group px-8 py-8 transition hover:-translate-y-1">
 			<div class="flex items-start justify-between gap-6">
 				<div>
 					<p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Doc {doc.order}</p>

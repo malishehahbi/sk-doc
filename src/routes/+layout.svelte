@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let { data, children } = $props();
 	let theme = $state<'light' | 'dark'>('light');
@@ -59,7 +60,9 @@
 			<div class="h-3 w-3 rounded-full border" style="border-color: var(--line)"></div>
 			<div>
 				<p class="text-[11px] uppercase tracking-[0.4em] text-[var(--muted)]">Neorw</p>
-				<a href="/"><p class="text-lg font-semibold tracking-tight">Documentatios</p></a>
+				<a href={`${base}/`}>
+					<p class="text-lg font-semibold tracking-tight">Documentatios</p>
+				</a>
 			</div>
 		</div>
 		<div class="flex items-center gap-3">
@@ -113,7 +116,7 @@
 		</div>
 		<div class="mt-4 flex max-h-[50vh] flex-col gap-3 overflow-auto">
 			{#each filteredDocs as doc}
-				<a href={`/docs/${doc.slug}`} class="card px-5 py-4" on:click={closeSearch}>
+				<a href={`${base}/docs/${doc.slug}`} class="card px-5 py-4" on:click={closeSearch}>
 					<p class="text-sm font-semibold">
 						{@html highlight(doc.title)}
 					</p>

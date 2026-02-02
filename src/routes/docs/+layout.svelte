@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let { data, children } = $props();
 	let sidebarOpen = $state(false);
 
@@ -45,7 +46,7 @@
 						{#each group.docs as doc}
 							<li>
 								<a
-									href={`/docs/${doc.slug}`}
+									href={`${base}/docs/${doc.slug}`}
 									class="block text-sm text-[var(--text)] transition hover:text-[var(--muted)]"
 								>
 									{doc.title}
@@ -85,7 +86,7 @@
 					{#each group.docs as doc}
 						<li>
 							<a
-								href={`/docs/${doc.slug}`}
+								href={`${base}/docs/${doc.slug}`}
 								class="block text-sm text-[var(--text)] transition hover:text-[var(--muted)]"
 								on:click={() => (sidebarOpen = false)}
 							>

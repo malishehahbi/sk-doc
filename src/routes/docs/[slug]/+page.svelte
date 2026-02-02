@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let { data } = $props();
 	let copyLabel = $state('Copy as MD');
 	let docSearch = $state('');
@@ -126,7 +127,7 @@
 				>
 					{copyLabel}
 				</button>
-				<a href="/" class="tag transition hover:border-[var(--accent)] hover:text-[var(--text)]">
+				<a href={`${base}/`} class="tag transition hover:border-[var(--accent)] hover:text-[var(--text)]">
 					Back to Home
 				</a>
 			</div>
@@ -173,7 +174,7 @@
 				>
 					{copyLabel}
 				</button>
-				<a href="/" class="tag transition hover:border-[var(--accent)] hover:text-[var(--text)]">
+				<a href={`${base}/`} class="tag transition hover:border-[var(--accent)] hover:text-[var(--text)]">
 					Back to Home
 				</a>
 			</div>
