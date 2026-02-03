@@ -52,6 +52,10 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Mali Docs</title>
+	<meta
+		name="description"
+		content="Minimal Swiss-style documentation system built with SvelteKit. Markdown-first docs, instant search, and light/dark mode."
+	/>
 </svelte:head>
 
 <div class="min-h-screen">
