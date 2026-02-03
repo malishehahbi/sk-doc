@@ -29,8 +29,9 @@
 			<line x1="4" y1="12" x2="20" y2="12"></line>
 			<line x1="4" y1="17" x2="20" y2="17"></line>
 		</svg>
+		<p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Docs</p>
 	</button>
-	<p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Docs</p>
+	
 </div>
 
 <div class="grid gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
