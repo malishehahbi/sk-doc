@@ -146,6 +146,12 @@
 		color: var(--muted);
 	}
 
+	.doc-body ol {
+		margin: 0.75rem 0 0.75rem 1.25rem;
+		list-style: auto;
+		color: var(--muted);
+	}
+
 	mark {
 		background: color-mix(in srgb, var(--accent-soft) 70%, transparent);
 		color: inherit;
